@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="px-5 flex flex-row justify-between lg:px-20 py-4 border-b sticky top-0 bg-zinc-900 opacity-90"
+    class="px-5 flex flex-row justify-between lg:px-20 py-4 border-b sticky top-0 bg-zinc-900"
   >
     <ul
-      class="lg:hidden grid grid-cols-1 absolute top-[4rem] z-[10] right-0 gap-1 h-40 w-full text-orange-500 bg-zinc-900 p-4 opacity-90 text-center"
+      class="lg:hidden grid grid-cols-1 absolute top-[4rem] z-[10] right-0 gap-1 h-40 w-full text-white bg-orange-900 p-4 text-center font-normal text-xl"
       v-if="menuStore.menuBar"
     >
       <li>Features</li>
