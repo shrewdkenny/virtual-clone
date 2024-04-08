@@ -10,7 +10,6 @@
       <li>Workflow</li>
       <li>Pricing</li>
       <li>Testimonials</li>
-      <!-- <li class="text-lg" v-for="item in items">{{ item }}</li> -->
     </ul>
     <div class="flex gap-2">
       <div class="text-sm">
@@ -74,7 +73,6 @@ import { useMenu } from "@/stores/Menu";
 export default {
   setup() {
     const menuStore = useMenu();
-    const items = menuStore.lists;
 
     const handleToggle = () => {
       menuStore.toogleMenu();
@@ -83,7 +81,6 @@ export default {
     return {
       handleToggle,
       menuStore,
-      items,
     };
   },
 };

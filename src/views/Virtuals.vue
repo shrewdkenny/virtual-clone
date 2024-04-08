@@ -4,7 +4,7 @@
       class="text-2xl lg:text-[70px] flex justify-center text-center lg:mt-20"
     >
       Virtuals Build tools
-      <span class="text-orange-500 ">&nbspfor developers</span>
+      <span class="text-orange-500">&nbspfor developers</span>
     </h1>
     <p
       class="mt-10 font-sans text-gray-400 text-sm leading-5 lg:text-lg lg:font-normal px-5 flex justify-center text-center font-thin"
@@ -264,7 +264,7 @@
 
     <!-- footer -->
     <div
-      class="border-t-[1px] border-gray-700 mt-10 gap-3 lg:mt-28 lg:flex lg:gap-[250px] px-2 lg:px-20 grid grid-cols-2 mb-2"
+      class="border-t-[1px] border-gray-700 mt-10  lg:mt-28 lg:flex lg:flex-row flex-col lg:justify-between lg:px-20 mb-2"
     >
       <div class="flex flex-col mt-10">
         <h1 class="font-semibold text-2xl">Resources</h1>
