@@ -1,4 +1,10 @@
 <template>
+  <ul
+    class="lg:hidden grid grid-cols-1 gap-1 h-40 text-orange-500 bg-gray-900 p-2 absolute right-[270px] z-40"
+    v-if="menuStore.menuBar"
+  >
+    <li class="text-lg" v-for="item in items">{{ item }}</li>
+  </ul>
   <nav
     class="px-5 flex flex-row justify-between lg:px-20 py-4 border-b border-gray-400 sticky top-0 bg-zinc-900 opacity-90"
   >
@@ -55,6 +61,24 @@
           />
         </svg>
       </button>
+      <button>
+        <svg
+          @click="closeMenu"
+          v-show="menuStore.menuBar"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          :stroke-width="1.5"
+          stroke="currentColor"
+          :class="{ 'w-6 h-6': true }"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
     </div>
   </nav>
 </template>
@@ -64,14 +88,20 @@ import { useMenu } from "@/stores/Menu";
 export default {
   setup() {
     const menuStore = useMenu();
+    const items = menuStore.lists;
 
     const handleToggle = () => {
+      menuStore.toogleMenu();
+    };
+    const closeMenu = () => {
       menuStore.toogleMenu();
     };
 
     return {
       handleToggle,
       menuStore,
+      items,
+      closeMenu,
     };
   },
 };
