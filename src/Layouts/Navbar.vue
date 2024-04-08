@@ -1,13 +1,17 @@
 <template>
-  <ul
-    class="lg:hidden grid grid-cols-1 gap-1 h-40 text-orange-500 bg-gray-900 p-2 absolute right-[270px] z-40"
-    v-if="menuStore.menuBar"
-  >
-    <li class="text-lg" v-for="item in items">{{ item }}</li>
-  </ul>
   <nav
-    class="px-5 flex flex-row justify-between lg:px-20 py-4 border-b border-gray-400 sticky top-0 bg-zinc-900 opacity-90"
+    class="px-5 flex flex-row justify-between lg:px-20 py-4 border-b sticky top-0 bg-zinc-900 opacity-90"
   >
+    <ul
+      class="lg:hidden grid grid-cols-1 absolute top-[4rem] z-[10] right-0 gap-1 h-40 w-full text-orange-500 bg-zinc-900 p-4 opacity-90 text-center"
+      v-if="menuStore.menuBar"
+    >
+      <li>Features</li>
+      <li>Workflow</li>
+      <li>Pricing</li>
+      <li>Testimonials</li>
+      <!-- <li class="text-lg" v-for="item in items">{{ item }}</li> -->
+    </ul>
     <div class="flex gap-2">
       <div class="text-sm">
         <img src="@/assets/logo.png" alt="" class="w-[30px] h-[30px]" />
@@ -61,24 +65,6 @@
           />
         </svg>
       </button>
-      <button>
-        <svg
-          @click="closeMenu"
-          v-show="menuStore.menuBar"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          :stroke-width="1.5"
-          stroke="currentColor"
-          :class="{ 'w-6 h-6': true }"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </button>
     </div>
   </nav>
 </template>
@@ -93,15 +79,11 @@ export default {
     const handleToggle = () => {
       menuStore.toogleMenu();
     };
-    const closeMenu = () => {
-      menuStore.toogleMenu();
-    };
 
     return {
       handleToggle,
       menuStore,
       items,
-      closeMenu,
     };
   },
 };
