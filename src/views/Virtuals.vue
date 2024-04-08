@@ -3,8 +3,8 @@
     <h1
       class="text-2xl lg:text-[70px] flex justify-center text-center lg:mt-20"
     >
-      Virtuals Build tools
-      <span class="text-orange-500 lg:ml-4 ml-2">for developers</span>
+      Virtuals Build tools for developers.
+      <!-- <span class="text-orange-500 lg:ml-4 ml-2">for developers</span> -->
     </h1>
     <p
       class="mt-10 font-sans text-gray-400 text-sm leading-5 lg:text-lg lg:font-normal px-5 flex justify-center text-center font-thin"
