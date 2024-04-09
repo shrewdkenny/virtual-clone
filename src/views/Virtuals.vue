@@ -264,31 +264,31 @@
 
     <!-- footer -->
     <div
-      class="border-t-[1px] border-gray-700 mt-10  lg:mt-28 lg:flex lg:flex-row flex-col lg:justify-between lg:px-20 mb-2"
+      class="border-t-[1px] border-gray-700 mt-10 lg:mt-28 flex flex-row gap-1 mb-2"
     >
       <div class="flex flex-col mt-10">
-        <h1 class="font-semibold text-2xl">Resources</h1>
-        <ul class="mt-5 flex flex-col gap-2 text-gray-400 text-lg">
+        <h1 class="font-semibold lg:text-2xl text-lg flex">Resources</h1>
+        <ul class="mt-5 flex flex-col gap-2 text-gray-400 text-sm lg:text-lg">
           <li class="hover:text-white">Getting Started</li>
           <li class="hover:text-white">Documentation</li>
           <li class="hover:text-white">Tutorials</li>
           <li class="hover:text-white">API Reference</li>
-          <li>Community Forums</li>
+          <li class="hover:text-white">Community Forums</li>
         </ul>
       </div>
       <div class="flex flex-col mt-10">
-        <h1 class="font-semibold text-2xl">Platform</h1>
-        <ul class="mt-5 flex flex-col gap-1 text-gray-400 text-lg">
+        <h1 class="font-semibold  lg:text-2xl text-lg">Platform</h1>
+        <ul class="mt-5 flex flex-col gap-1 text-gray-400 text-sm lg:text-lg">
           <li class="hover:text-white">Features</li>
-          <li class="hover:text-white">Supported Devices</li>
+          <li class="hover:text-white">Supported </li>
           <li class="hover:text-white">System Requirements</li>
           <li class="hover:text-white">Downloads</li>
           <li class="hover:text-white">Release Notes</li>
         </ul>
       </div>
       <div class="flex flex-col mt-10">
-        <h1 class="font-semibold text-2xl">Community</h1>
-        <ul class="mt-5 flex flex-col gap-2 text-gray-400 text-lg">
+        <h1 class="font-semibold  lg:text-2xl text-lg">Community</h1>
+        <ul class="mt-5 flex flex-col gap-2 text-gray-400 text-sm lg:text-lg">
           <li class="hover:text-white">Events</li>
           <li class="hover:text-white">Meetups</li>
           <li class="hover:text-white">Conferences</li>
